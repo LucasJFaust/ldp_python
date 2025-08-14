@@ -28,9 +28,10 @@ Nenhum erro esperado, apenas uma verificação de comprimento da senha.
 
 """
 
-senha = (input("Digite a senha: "))
+senhas = ["12345678", "senha123", "abc", "senha_valida_2023", "senha"]
 
-if len(str(senha)) >= 8:
-    print("Senha válida")
-else:
-    print("Senha inválida, deve conter pelo menos 8 caracteres")
+for senha in senhas:
+    if len(str(senha)) >= 8:
+        print(f"Senha {senha} é válida")
+    else:
+        print(f"Senha {senha} inválida, deve conter pelo menos 8 caracteres")
